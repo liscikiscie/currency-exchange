@@ -1,0 +1,10 @@
+language: node_js
+node_js:
+- "10"
+env:
+- APP=ci-playground-1
+- APP=currency-exchange
+deploy:
+  provider: heroku
+  api_key:
+  app: $APP
